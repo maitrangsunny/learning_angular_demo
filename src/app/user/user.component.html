@@ -1,0 +1,7 @@
+<!-- <input placeholder="fill in it" (keyup)="showInfo($event)"/> -->
+<input placeholder="fill in it" [(ngModel)] = "name" #txtUsername/>
+<!-- <p [style.color]="name.length % 2===0 ? 'red' : 'black'">This name is: {{name}}</p> -->
+<p [style.color]="isHightlight ? 'red' : 'black'">This name is: {{name}}</p>
+<!-- <code>{{ txtUsername.value | json }}</code> -->
+<div [class]="isHightlight ? 'circle' : 'square'"></div>
+<div [class.circle]="!isHightlight" [class.square]="isHightlight"></div>
